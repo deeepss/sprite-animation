@@ -1,0 +1,29 @@
+body {
+  
+}
+
+.screenBg {
+  position: relative;
+  width: 1000px;
+  height: 340px;
+  background: url('../images/simple-bg.png') left center;  
+  animation: screenRun 2s steps(5) infinite;
+}
+
+@keyframes screenRun {
+   100% { background-position: -1024px; }
+}
+
+.keyFrame {
+  position: absolute;
+  bottom : 0;
+    left : 40px;
+  width: 58px;
+  height: 87px;
+  background: url('../images/john_sprite.png') left center;
+  animation: run 2s steps(8) infinite;
+}
+
+@keyframes run {
+   100% { background-position: -464px; }
+}
